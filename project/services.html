@@ -1,0 +1,71 @@
+<html>
+<head>
+	<meta name="author" content="Meet Prajapati">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services</title>	
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+	function validateform()
+	{
+		var x=document.services.firstname.value;
+		var y=document.services.emailid.value;
+		var z=document.services.mobileno.value; 	
+		if (x==null || x=="") 
+		{
+			alert("Write Name:");
+			document.services.firstname.focus();
+			return false;
+		}
+			if (y==null || y=="") 
+		{
+			alert("Write Email-Id:");
+			document.services.firstname.focus();
+			return false;
+		}
+			if (z=="" || isNaN(z)|| z.length<10) 
+		{
+			alert("Write mobileno:");
+			document.services.mobileno.focus();
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<a href="mlogo.jpg"><img src="mlogo.jpg"></a>
+			</div>
+			<ul>
+				<li ><a href="home.html">HOME</a></li>
+				<li><a href="services.html">SERVICES</a></li>
+				<li><a href="gallery.html">TUTORIALS</a></li>
+				<li><a href="contact.html">ABOUT ME</a></li>
+			</ul>
+			
+		</div>
+	</header>
+	<div class="serve">
+		<h1><a href="home.html">SERVICES</a></h1><br>
+			<p> Services provided by the company are as follows.</p>
+			<p>ENROLL NOW</p>
+			<ol>
+				<li>Training on ARDUINO & IOT</li>
+				<li>Various Projects</li>
+				<li>Installtion on your devices</li><br>
+					<a href="contact.html">Contact us for more details</a>
+			</ol>	
+			<br>
+			<h2>REGISTRATION FORM</h2>
+	<form onsubmit="return validateform()" action="insert.php" method="post" name="services">
+		&nbsp &nbsp &nbsp &nbsp &nbsp Name:<br><br>
+  		&nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="firstname"><br><br>
+  		&nbsp &nbsp &nbsp &nbsp &nbspE-mail Id:<br><br>
+  		&nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="emailid"><br><br>
+   	    &nbsp &nbsp &nbsp &nbsp &nbsp Mobile Phone<br><br>
+  		&nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="mobileno" maxlength="10"><br><br>
+  		&nbsp &nbsp &nbsp &nbsp &nbsp<input type="submit" value="Submit">
+	</form><br>
+</div>
+</body>

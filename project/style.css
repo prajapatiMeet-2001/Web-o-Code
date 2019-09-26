@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: cursive;
+}
+.home header{
+	background-image: url(1.jpg);
+	background-blend-mode: soft-light;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+.gal{
+	background-image: url(gal.jpg);
+	background-blend-mode: lighten;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+.cont{
+	background-color: #80dfff;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+.gal h1 a{
+	color: #ffffff;
+	text-align: center;
+}
+ul{
+	float: right;
+	margin: top;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 2px solid:#fff ;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #336600;
+}
+.logo img{
+	float: left;
+	height: 80px;
+	width: auto;
+	box-shadow: 2px 2px #888888;
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+  text-decoration-color: white;
+}
+.serve p{
+	text-align: center;
+	font-size: 25px;
+	color: #ccff99;
+}
+.serve a {
+	color: #ccffcc;
+	margin-left: 35px;
+}
+.serve ol li {
+	color: #ffcc99;
+	margin-left: 35px;
+}
+.serve form{
+	color:#ffcc99;
+}
+.serve h2{
+	color:#ccff99;
+	text-align: left;
+	margin-left: 40px;
+}
+.serve {
+	background-image: url(services.jpg);
+	background-blend-mode: luminosity;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+
+}
+.pdf ul{
+	margin: top;
+	margin-top: 50px;
+}
+.pdf ul li{
+ 
+}
+.pdf ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 2px solid:#fff ;
+}
+.pdf ul li a:hover{
+	background-color: #fff;
+	color: #336600;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.left, .right {
+  width: 25%;
+}
+.middle {
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.mEet img{
+height: 70vh;
+width: auto;
+}
